@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>User Registration</h1>
+<form action="#" th:action="@{/account/transaction_by_bank_account}" method="post">
+    <label>bank acc:</label>
+    <input type="text" th:field="*{bankAccount.bankAccountNumber}" /><br/>
+
+    <label>cash</label>
+    <input type="text" th:field="*{cashAmount.cash}" /><br/>
+
+    <br/>
+
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>

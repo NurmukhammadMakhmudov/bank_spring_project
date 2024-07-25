@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div class="container">
+  <h1>Congrats!!! You did it!</h1>
+
+    <div>
+        <h2>Personal info</h2>
+        <div>
+            <p th:text="${user.email}"></p>
+            <p th:text="${user.firstName}"></p>
+            <p th:text="${user.lastName}"></p>
+            <p th:text="${bankAccount.phoneNumber}"></p>
+            <p></p>
+        </div>
+    </div>
+    <div>
+        <h2>Account info</h2>
+        <div>
+            <p th:text="${bankAccount.bankAccountNumber}"></p>
+            <p th:text="${bankAccount.cardNumber}"></p>
+            <p th:text="${bankAccount.creationDate}"></p>
+            <p th:text="${bankAccount.CVV}"></p>
+            <p></p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Account info</h2>
+        <div>
+            <p th:text="${accountModel.bankAccountNumber}"></p>
+            <p th:text="${accountModel.cash}"></p>
+
+            <p></p>
+        </div>
+        <div>
+            <a href="/account">transaction option</a>
+        </div>
+        <div>
+            <a href="/registration/add_new_card">add new card</a>
+        </div>
+    </div>
+
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <th>name</th>-->
+<!--            <th>Value</th>-->
+
+<!--        </tr>-->
+<!--        <tr th:each="el : ${currencies} ">-->
+<!--            <td th:text="${el.name}"></td>-->
+<!--            <td th:text="${el.value}"></td>-->
+<!--        </tr>-->
+<!--        </tr>-->
+<!--    </table>-->
+    <div>
+        <div>
+
+        </div>
+    </div>
+<!--  <form action="@{/auth/logout}" method="POST">-->
+
+<!--    <button type="submit">Logout</button>-->
+<!--  </form>-->
+</div>
+</html>
+
